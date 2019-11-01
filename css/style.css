@@ -216,20 +216,21 @@
 .content_box {
     background-color: #FFFFFF;
     height: 370px;
-    width: 80%;
+    width: 70%;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
     opacity: 1;
     display: flex;
     justify-content: space-between;
     margin-bottom: 37px;
+    margin-top: 40px;
 }
 
 .content_box_first_left{
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     
 
 }
@@ -240,10 +241,12 @@
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
+    padding-bottom: 20px;
+    font-weight: normal;
 }
 
 .content_box_first_left p {
-    width: 60%;
+    width: 75%;
     font-size: 16px;
     margin-left: 35px;    
 }
@@ -256,10 +259,11 @@
 }
 
 .content_box_first_right{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
+    padding-top: 40px;
 }
 
 .right_icon{
@@ -344,7 +348,7 @@
 .content_box_third{
     
     height: 370px;
-    width: 80%;
+    width: 70%;
     margin-bottom: 37px;
     display: flex;
     justify-content: space-around;
@@ -355,15 +359,15 @@
     border: 1px solid #E8E9ED;
     border-radius: 5px;
     opacity: 1;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    margin-right: 60px;
+    
 }
 
 .text_box h2{
-    width: 60%;
+    width: 70%;
     font-size: 36px;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
@@ -375,6 +379,8 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     padding-left: 30px;
+    padding-right: 20px;
+    margin-right:10px;
 }
 
 .box_third_border{
@@ -385,12 +391,12 @@
     border: 1px solid #E8E9ED;
     border-radius: 5px;
     opacity: 1;
-    width: 40%;
+    width: 35%;
     background-color: #55DFB4;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    
     
     
 }
@@ -409,12 +415,12 @@
 
 .pricing_box{
     
-    width: 70%;
-    height: 600px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 6%;
     
 
 }
@@ -427,7 +433,7 @@
 
 .type_of_version{
     margin-top: 40px;
-    width: 90%;
+    width: 1270px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -553,15 +559,21 @@
 /* ---------Kalkulator------ */
 
 .calculator{
-    margin-top:70px;
-    width: 90%;
+    padding: 80px;
+    border: 1px solid #E8E9ED;
+    background-color: #F7F7F7;
+    margin-top:150px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+.calculator h3 {
+    font-size: 36px;
+    font-weight: normal;
+}
 .form_section_calculator{
     margin-top: 4%;
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
 }
@@ -589,8 +601,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: block;
     border-radius: 5px;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
@@ -598,6 +610,7 @@
     position: relative;
     border:1px solid #707070;
 }
+
 .form_calculator input:checked::after{
     content: "";
     width: 16px;
@@ -615,9 +628,9 @@
   .box_paragraf {
     margin-top: 15px;
       display: flex;
-      justify-content: space-around;
-      
+      justify-content: space-around;   
   }
+
   .box_paragraf p{
     font-size: 14px;
     color: #707070;
@@ -633,11 +646,6 @@
     border: 1px solid #08A6E4;
     border-radius: 6px; 
     padding-left: 20px;
-}
-.form_calculator select:after{
-    content: "f0ab";
-    height: 20px;
-    width: 20px;
 }
 
 .form_calculator select:hover{
@@ -683,7 +691,7 @@
     height: 31px;
     background-color: #55DFB4;
     border-radius: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     color: #FFFFFF;
     font-size: 14px;
     visibility: hidden;
@@ -696,13 +704,13 @@
     text-decoration: none;
     background-color: #08A6E4;
     border-radius: 6px;
-    width: 12%;
+    width: 50%;
     height: 40px;
     padding: 0px 80px 0px 80px;   
     color: #FFFFFF;
     align-self: flex-end;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     visibility: visible;
     
@@ -717,17 +725,16 @@
 /* ---------Formularz Questions------ */
 
 .form_section_question{
-    margin-top: 8%;
-    width: 70%;
+    margin-top: 8%; 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    padding-bottom: 50px;
 }
 .question_sector{
-    width: 50%;
     justify-content: center;
-    margin-bottom: 20%;
+    height: 372px;
+
 }
 .question_sector h4{
     font-size: 49px;
@@ -753,10 +760,12 @@
 }
 
 .form_name_and_email{
+    /* height: 372px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    margin-left: 10%;
     
 }
 
@@ -772,7 +781,7 @@
 .form_name_and_email input{
     border: none;
     border-bottom: 1px solid #95989A;
-    width: 90%;
+    width: 440px;
 }
 
 .form_name_and_email input[type='checkbox']{
@@ -808,7 +817,7 @@
     display: flex;
 }
       .form_name_and_email div p:last-of-type{
-        width: 80%;
+        width: 400px;
         margin-top: 30px;
         margin-left: 10px;
         font-size: 12px;
@@ -819,7 +828,7 @@
     }
 
 .send_btn{
-    width: 226px;
+    width: 200px;
     height: 57px;
     background-color: #08A6E4;
     border-radius: 35px;
@@ -830,7 +839,7 @@
     justify-content: center;
     align-items: center;
     align-self: flex-end;
-    margin-right:60px
+    margin-right: 40%;
 }
 
 /*-------- STOPKA ------------*/
