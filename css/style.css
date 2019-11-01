@@ -1,11 +1,13 @@
 .body {
     font-family: 'Open Sans', sans-serif;
     width: 1352px;
+    max-width: 1200px;
 }
 
 .box-content {
     height: 100vh;
-    margin: 0 auto;
+    
+    
 }
 
 .nav-bar {
@@ -59,7 +61,7 @@
 
 /*DRUGI ELEMENT*/
 
-.section {
+.section_banner {
     height: 842px;
     width: 100%;
     display: flex;
@@ -71,7 +73,7 @@
 }
 
 .banner-pic {
-    background-image: url("assets/Background.png");
+    background-image: url("../assets/Background.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 594px;
@@ -107,6 +109,7 @@
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
     opacity: 1;
+    text-decoration: none;
 }
 
 
@@ -141,6 +144,7 @@
     justify-content: space-around;
     color: #A5A5A5; 
     align-items: center;
+
   
 }
 .box_ranking h3 {
@@ -148,24 +152,27 @@
     font-size: 20px;
     color: black;
     padding-top: 150px;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 4px;
 }
 
 .box_ranking p{
     padding-top: 10px;
     text-align: center;
+    
 }
 .box_ranking li{
-    width: 10%;
+    width: 95px;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: inherit; 
+    align-items: inherit;
+    position: relative;
+    margin-top: 30px;
 }
 .box_ranking li:nth-of-type(2) h3{
-margin-top: 30px;
+    margin-top: 30px;
 }
 .box_ranking li span{
     align-self: flex-end;
@@ -212,6 +219,7 @@ margin-top: 30px;
     border-radius: 5px;
     opacity: 1;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 37px;
 }
 
@@ -252,24 +260,29 @@ margin-top: 30px;
     justify-content: space-around;
 }
 
-.right_icon {
-    width: 386px;
-    height: 219px;
-    background-image: url("assets/Macbook.png");
+.right_icon{
+    width: 40%;
+    position: relative;
+}
+.right_icon img{
+    width: 385px;
+    height: 220px;
     box-sizing: content-box;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1; 
 }
 .right_icon::before{
     content: "";
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 41px;
     background: #FB3B64;
     transform: rotate(40deg);
     position: absolute;
+    left: 200px;
+    bottom: 50px;
     z-index: 0;    
 }
 
@@ -282,26 +295,31 @@ margin-top: 30px;
     align-items: center;
 }
 .box_second_icon {
-    width: 426px;
-    height: 328px;
-    background-image: url("assets/iPhone.png");
     box-sizing: content-box;
     background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-    position: relative;   
+    background-repeat: no-repeat; 
+    position: relative;
 }
+.box_second_icon img{
+    width: 430px;
+    height: 330px;
+    position: relative;
+    z-index: 1; 
+}
+
 .box_second_icon::before{
     content: "";
-    height: 320px;
-    width: 320px;
+    height: 310px;
+    width: 310px;
     border-radius: 50%;
     background: #08A6E4;
     position: absolute;
+    bottom: 25px;
     z-index: 0; 
 }
 
 .box_second_text{
+    margin-right: 2%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -374,7 +392,7 @@ margin-top: 30px;
 }
 
 .trumpet{
-    background-image: url("assets/Trumpet.png");
+    background-image: url("../assets/Trumpet.png");
     width: 300px;
     height: 200px;
     box-sizing: content-box;
@@ -386,8 +404,8 @@ margin-top: 30px;
 /*---- SEKCJA CENY ------*/
 
 .pricing_box{
-    width: 90%;
-    height: 616px;
+    width: 70%;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,7 +435,6 @@ margin-top: 30px;
 .type_of_version p:first-of-type{
     font-size: 46px;
 }
-
 
 .type_of_version ul{
     margin-top: 30px;
@@ -528,29 +545,193 @@ margin-top: 30px;
 }
 
 
-.form_section{
+/* ---------Kalkulator------ */
+
+.calculator{
+    margin-top:70px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form_section_calculator{
+    margin-top: 4%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.form_calculator{ 
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.form_calculator input {
+    height: 40px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #08A6E429;
+    border: 1px solid #08A6E4;
+    border-radius: 6px;
+    opacity: 1;
+    margin-bottom: 4%;
+    padding-left: 20px;    
+}
+.form_calculator [type='checkbox']{
+    margin-top: 15px;
+    width: 10px;
+    height: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+    outline: none;
+    position: relative;
+    border:1px solid #707070;
+}
+.form_calculator input:checked::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../assets/Checkmark.svg");
+    box-sizing: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }
+
+  .box_paragraf {
+    margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  .box_paragraf p{
+    font-size: 14px;
+    color: #707070;
+    padding-top: 15px; 
+} 
+
+.form_calculator select {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: url('../assets/arrow-circle.svg') no-repeat right;
+    cursor: pointer;
+    border: 1px solid #08A6E4;
+    border-radius: 6px; 
+    padding-left: 20px;
+}
+.form_calculator select:after{
+    content: "f0ab";
+    height: 20px;
+    width: 20px;
+}
+
+.form_calculator select:hover{
+    background-image: url("../assets/arrow-circle-up-solid.svg");
+}
+
+.choose_package {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: #95989A;  
+}
+
+ /* ---------kalkulator prawa strona---------- */
+
+.right_section_calculator{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+.right_section_calculator ul{
+    width: 100%;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    
+    
+}
+.right_section_calculator li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 31px;
+    background-color: #55DFB4;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+    font-size: 14px;
+    visibility: hidden;
+    text-align: center;
+    
+    
+}
+.total_btn{
+    margin-top: 5%;
+    text-decoration: none;
+    background-color: #08A6E4;
+    border-radius: 6px;
+    width: 10%;
+    height: 40px;
+    padding: 0px 80px 0px 80px;   
+    color: #FFFFFF;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: visible;
+    
+}
+.total_sum{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ---------Formularz Questions------ */
+
+.form_section_question{
+    margin-top: 8%;
     width: 70%;
-    height: 376px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 60px;
 }
-
+.question_sector{
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 20%;
+}
 .question_sector h4{
     font-size: 49px;
     font-weight: normal;
     padding-bottom: 30px;
-
 }
 
 .question_sector p{
     font-size: 16px;
-    font-weight: normal;
-    
-    
+    font-weight: normal;     
 }
-
 .question_sector ul{
     display: flex;
     list-style: none;
@@ -564,17 +745,15 @@ margin-top: 30px;
     padding-top: 20px;
 }
 
-/* ---------Formularz------ */
-
-.form{
+.form_name_and_email{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 50%;
-    margin-top: 170px;
-    margin-left: 50px;
+    
 }
 
-.form p{
+.form_name_and_email p{
     font-size: 11px;
     color: #08A6E4;
     font-weight: bold;
@@ -583,13 +762,13 @@ margin-top: 30px;
     
 }
 
-.form input:first-of-type, input:last-of-type{
+.form_name_and_email input{
     border: none;
     border-bottom: 1px solid #95989A;
-    width: 400px;
+    width: 90%;
 }
 
-.form input[type='checkbox']{
+.form_name_and_email input[type='checkbox']{
     margin-top: 34px;
     width: 24px;
     height: 24px;
@@ -605,7 +784,7 @@ margin-top: 30px;
     outline: none;
     position: relative;
 }
-.form input:last-of-type:checked::after{
+.form_name_and_email input:last-of-type:checked::after{
         content: "";
         width: 16px;
         height: 16px;
@@ -613,22 +792,22 @@ margin-top: 30px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-image: url("assets/Checkmark.svg");
+        background-image: url("../assets/Checkmark.svg");
         box-sizing: content-box;
         background-size: cover;
-        background-repeat: no-repeat;
-        
+        background-repeat: no-repeat;      
       }
-.form div{
+.form_name_and_email div{
     display: flex;
 }
-      .form div p:last-of-type{
+      .form_name_and_email div p:last-of-type{
         width: 80%;
         margin-top: 30px;
         margin-left: 10px;
         font-size: 12px;
         color: #707070;
         align-self: flex-end;
+        font-weight: normal;
         
     }
 
@@ -650,7 +829,7 @@ margin-top: 30px;
 /*-------- STOPKA ------------*/
 .footer{
     margin-top: 60px;
-    width: 100%;
+    width: 100%vw;
     
     box-shadow: 0px -5px 40px #00000029;
     display: flex;

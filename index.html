@@ -2,13 +2,13 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Best Shop</title>
 
 </head>
@@ -27,11 +27,11 @@
 
                </ul>
         </nav>
-    <section class="section">
+    <section class="section_banner">
 
         <h1 class="banner-title">Sell More!</h1>
         <p class="banner-text">Open shop on own platform and increase your sales</p>
-        <button class="big_btn" type="button">Open your shop </button>
+        <a href="#" class="big_btn" type="button">Open your shop </a>
         <div class="banner-pic"></div>
         
     </section>
@@ -44,7 +44,7 @@
                 <p>daily entries</p></li>
             <li><span class="box_icon"><img src="assets/Eye.svg" alt="eye"/></span>
                 <h3>2000000+</h3>
-                <p>seen products every day</p>
+                <p>seen products <br> every day</p>
             </li>
             <li><span class="box_icon" ><img src="assets/Catalog.svg" alt="catalog"/></span>
                 <h3>10000+</h3>
@@ -63,13 +63,13 @@
                 </div>
 
                 <div class="content_box_first_right">
-                    <span class="right_icon"></span>
+                    <span class="right_icon"><img src="assets/Macbook.png"></span>
                 </div>        
         </div>
 
         <div class="content_box">
 
-            <div class="box_second"><span class="box_second_icon"></span> </div>
+            <div class="box_second"><span class="box_second_icon"><img src="assets/iPhone.png"></span> </div>
             <div class="box_second_text">
                 <h2>Your shop is where you are</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -137,14 +137,49 @@
                         <a class="pricing_box_btn premium_btn">Begin</a>
                 
                     </div>
-
             </div>
-
-
-            
         </section>
 
-        <section class="form_section">
+        <section class="calculator">
+            <h3>Calculate how much you’ll pay</h3>
+                <div class="form_section_calculator">
+                    <form class="form_calculator">
+                            <input type="number" placeholder="Products quantity" min="1"/>
+                            <input type="number"placeholder="Estimated orders in month" min="1"/>
+
+                            <div class="option_input" data-type= "select">
+                             <select class="choose_package">
+                                    <option class="option_1" disabled= "disabled" selected="selected">Choose package</option>
+                                    <option class='type_of_package' value="1">Basic</option>
+                                    <option class='type_of_package' value="2">Professional</option>
+                                    <option class='type_of_package' value="3">Premium</option>
+                             </select>
+                            </div>
+
+                            <div class= 'box_paragraf'>
+                            <input class="box_1 " type="checkbox"/><p>Accounting</p>
+                            <input class="box_2 " type="checkbox"/><p>Rental of a payment terminal</p>
+                            </div>
+                        </form>
+
+                        <div class="right_section_calculator">
+                                <ul>
+                                    <li class= first_row><p>Products</p><p class="product"></p><p class= 'total_product total_sum'></p></li>
+                                    <li class= second_row><p>Orders</p><p class="orders"></p><p class= 'total_orders total_sum'></p></li>
+                                    <li class= select_row><p>Package</p><p class="Package"></p><p class= 'prize_package total_sum'></p></li>
+                                    <li class="accounting"><p>Accounting</p><p class= 'prize_accounting total_sum'></p></li>
+                                    <li class="terminal"><p>Terminal</p><p class= 'prize_terminal total_sum'></p></li>
+                                </ul>
+                                <span class= "total_btn">
+                                    <p>Total</p>
+                                    <p id=sum_order></p>
+                                </span>
+                            </div>
+
+                        </div> 
+                    
+                </section>
+        <section class="form_section_question">
             <div class="question_sector">
                 <h4>Any questions?</h4>
                 <p>Leave your emaill address or call us!</p>
@@ -154,7 +189,7 @@
                 </ul>
 
             </div>
-            <form class="form">
+            <form class="form_name_and_email">
                     <p>Name</p>
                     <input type="text"/>
                     <p>Email</p>
@@ -187,7 +222,7 @@
 
     
 
-    
+ <script src="app.js"></script>
 
 </body>
 
