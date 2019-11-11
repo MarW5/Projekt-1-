@@ -672,6 +672,58 @@
     -webkit-appearance: none;
     color: #95989A;  
 }
+/* dropdown---------------- */
+
+.mydropdown {
+    height: 40px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #08A6E429;
+    border: 1px solid #08A6E4;
+    border-radius: 6px;
+    opacity: 1;
+    margin-bottom: 4%;
+    padding-left: 20px; 
+    display: flex;
+    justify-content: space-between;
+   position: relative;
+}
+.mydropdown i{
+    color: #08A6E4;
+    position: absolute;
+    left: 230px;
+    
+}
+
+.dropdown_visible{
+   
+    list-style: none;
+    border: 1px solid #EB476E;
+    box-shadow: 0px 3px 6px #EB476E29;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    color: #707070;
+    background-color: #FFFFFF;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.dropdown_visible li:hover {
+    background-color: #08A6E4;
+    cursor: pointer;
+
+}
+
+.dropdown_hidden{
+    visibility: hidden;
+}
+ 
+
+.list_style{
+    font-size: 13px;
+
+}
+
 
  /* ---------kalkulator prawa strona---------- */
 

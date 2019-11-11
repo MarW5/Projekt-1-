@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-            let input_1 =document.querySelector('input')
+            
+      // const dropdown_btn = document.querySelector('.mydropdown');
+      // const menu_off = document.querySelector('.dropdown_hidden');
+      // const arrowDown = document.querySelector('.fa-arrow-circle-up');
+      // const arrowUp = document.querySelector('.fa-arrow-circle-down')
+      // const menu_on = document.querySelector('.dropdown_visible')
+      
+      // dropdown_btn.addEventListener('click', function (e) {
+      //       e.preventDefault();
+      //       menu_on.classList.toggle("dropdown_hidden")
+      // });
+  
+      
+      // console.log(dropdown_btn)
+      
+      
+      let input_1 =document.querySelector('input')
             let input_2 =input_1.nextElementSibling
             let input_3 =document.querySelector('.dropdown-menu');
             // let all_li = input_3.getElementsByTagName('li');
