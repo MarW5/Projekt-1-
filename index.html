@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<!--    <link rel="stylesheet" href="css/reset.css">-->
-<!--    <link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="css/main.css">
     <title>Best Shop</title>
 
@@ -17,16 +16,22 @@
 <body>
 <div class="box-content">
 
-        <nav class="nav-bar">
+        <nav class="nav-bar ">
+            <div class="nav-bar-logo">
              <span>BestShop</span>
+             <i class="fas fa-bars menu_hamburger"></i>
+             <i class="fas fa-times menu_hamburger"></i>
+            </div>
 
-               <ul class="menu">
-                    <li><a href="#">WHY US?</a></li>
+
+               <ul class="menu ">
+                    <li><a href="#">WHY US</a></li>
                     <li><a href="#">BENEFITS</a></li>
                     <li><a href="#">PRICES</a></li>
                     <li><a href="#">CONTACT</a></li>
 
                </ul>
+               
         </nav>
     <section class="section_banner">
 
@@ -55,7 +60,7 @@
     </div>
 
     <div class ="content_boxes">
-        <div class="content_box">
+        <div class="content_box content_box_first">
                 <div class="content_box_first_left">
                     <h2>Be always first</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -67,11 +72,11 @@
                 </div>        
         </div>
 
-        <div class="content_box">
+        <div class="content_box content_box_second">
 
             <div class="box_second"><span class="box_second_icon"><img src="assets/iPhone.png"></span> </div>
             <div class="box_second_text">
-                <h2>Your shop is where you are</h2>
+                <h2>Your shop is where you are!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <span class="content_box_border box_second_border"></span>
             </div>
@@ -82,7 +87,7 @@
         <div class="content_box_third " >
             <div class="text_box">
                 <h2>Increase recognition your brand!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos praesentium eius recusandae asperiores amet molestiae ipsa nulla magni, provident ad, quibusdam doloremque vero magnam minus? Laboriosam expedita consectetur temporibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <span class="content_box_border box_third_border"></span>
             </div>
 
@@ -96,8 +101,10 @@
             <h3>Pricing</h3>
             <div class="type_of_version">
                 <div class="basic">
-                    <h4>Basic</h4>
-                    <p>$0</p>
+                    <div class= "pricing_box_title_p">
+                        <h4>Basic</h4>
+                        <p>$0</p>
+                    </div>
                     <ul>
                         <li><img src="assets/Ckechmark-1.svg">MB HDD</li>
                         <li><img src="assets/Ckechmark-1.svg">1 Subdomain</li>
@@ -109,9 +116,11 @@
                 </div>
 
                 <div class="professional">
+                        <div class= "pricing_box_title_p">
                         <h4>Profesional</h4>
                         <p>$25</p>
                         <p>Limited offer</p>
+                        </div>
                         <ul>
                             <li><img src="assets/Ckechmark-1.svg">500 MB HDD</li>
                             <li><img src="assets/Ckechmark-1.svg">2 Subdomains</li>
@@ -123,9 +132,11 @@
                     </div>
                 
                 <div class="premium">
+                        <div class= "pricing_box_title_p">
                         <h4>Premium</h4>
                         <p>$60</p>
                         <p>Limited offer</p>
+                        </div>
                         <ul>
                             <li><img src="assets/Ckechmark-1.svg">2 GB HDD</li>
                             <li><img src="assets/Ckechmark-1.svg">5 Subdomains</li>
@@ -229,6 +240,7 @@
     
 
  <script src="app.js"></script>
+ <script src="index.js"></script>
 
 </body>
 
