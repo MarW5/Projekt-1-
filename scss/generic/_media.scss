@@ -2,11 +2,9 @@ $mobile: "(max-width:1000px)";
 
 @media #{$mobile} {
       body{
-            width: 100%;
-            
+            width: 100%;           
       }   
 }
-
 @media #{$mobile} {
       .nav-bar{
             flex-direction: column;
@@ -16,11 +14,13 @@ $mobile: "(max-width:1000px)";
                         padding-bottom: 20px;
                         padding-top: 20px;
                         width: 100%;
-                        justify-content: space-around;  
                         align-items: center;
+                        justify-content: space-around;
+                        
                   
                         span{
-                              padding-left: 0px;                             
+                              padding-left: 20px;    
+                              padding-right:50px;                         
                         }
                         .menu_hamburger{
                               width: 20px;
@@ -29,6 +29,10 @@ $mobile: "(max-width:1000px)";
                               background-size: contain;
                               background-repeat: no-repeat;
                               color: #08A6E4;
+                              
+                           .fa-bars{
+                                 display: block;
+                           }   
                         }
                   }
       }
@@ -43,19 +47,18 @@ $mobile: "(max-width:1000px)";
                   box-shadow: 0px 3px 6px #00000029;
                   opacity: 1;
                               li{
-                                    padding: 5px; 
+                                    padding: 5px;
+                                    cursor:pointer; 
                                     a{
                                     color: #A5A5A5;
                                     border-bottom: 0px;
+                                    
                                     &:hover{
                                           color: black;   
                                           }
-                                    
                                      }
-                              }
-                        
-                              
-            }
+                              }                             
+                  }
 }
       
 
@@ -268,8 +271,8 @@ $mobile: "(max-width:1000px)";
             margin-top: 0px;
             
             .basic{
-                  width: 25%;
-                  height: 20%;
+                  width: 22%;
+                  height: 15%;
                   padding: 0px;
                   margin-bottom: 40px;
                   margin-right: 0px;
@@ -289,8 +292,8 @@ $mobile: "(max-width:1000px)";
                   }
             }
             .professional{
-                  width: 30%;
-                  height: 25%;
+                  width: 25%;
+                  height: 20%;
                   flex-direction: row;
                   padding: 0px;
                   align-items: center;
@@ -309,8 +312,8 @@ $mobile: "(max-width:1000px)";
             }
       }
             .premium{
-                  width: 25%;
-                  height: 20%;
+                  width: 22%;
+                  height: 15%;
                   flex-direction: row;
                   padding: 0px;
                   align-items: center;
@@ -353,6 +356,12 @@ $mobile: "(max-width:1000px)";
                   }
                   a{
                         margin-right: 0px;
+                  }
+                  div{
+                        input [type='checkbox']{
+                              width: 10px;
+                              height: 10px;
+                        }
                   }
             }
       }

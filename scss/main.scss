@@ -142,7 +142,7 @@
 /* SEKCJA TRZECIA koła  */
 
 .container_info{
-  height: 531px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,8 +157,8 @@
   color: #000000;
   opacity: 1;
   font-size: 36px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   font-weight: normal;
 
 }
@@ -626,6 +626,7 @@
   justify-content: space-around;
 }
 .form_calculator{
+  font-size: 13px;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -657,6 +658,9 @@
   outline: none;
   position: relative;
   border:1px solid #707070;
+            &:hover{
+              background-color: #95989A;
+            }
 }
 
 .form_calculator input:checked::after{
@@ -678,6 +682,7 @@
   margin-top: 15px;
   display: flex;
   flex-direction: column;
+  z-index: 0;
 }
 
 .box_paragraf div{
@@ -691,37 +696,10 @@
   margin-left: 10px;
 }
 
-.form_calculator select {
-  width: 100%;
-  height: 40px;
-  overflow: hidden;
-  background: url('../assets/arrow-circle.svg') no-repeat right;
-  cursor: pointer;
-  border: 1px solid #08A6E4;
-  border-radius: 6px;
-  padding-left: 20px;
-}
-
-.form_calculator select:hover{
-  background-image: url("../assets/arrow-circle-up-solid.svg");
-}
-
-.choose_package {
-  background: transparent;
-  width: 268px;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 1;
-  border: 0;
-  border-radius: 0;
-  height: 34px;
-  border-radius: 6px;
-  -webkit-appearance: none;
-  color: #95989A;
-}
 /* dropdown---------------- */
 
 .mydropdown {
+  text-decoration: none;
   height: 40px;
   width: 100%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -730,47 +708,46 @@
   border-radius: 6px;
   opacity: 1;
   margin-bottom: 4%;
-  padding-left: 20px;
+  padding-left: 10px;
   display: flex;
   justify-content: space-between;
-  position: relative;
-}
-.mydropdown i{
-  color: #08A6E4;
-  position: absolute;
-  left: 230px;
-
-}
-
-.dropdown_visible{
-
-  list-style: none;
-  border: 1px solid #EB476E;
-  box-shadow: 0px 3px 6px #EB476E29;
-  border-radius: 6px;
-  font-family: 'Raleway', sans-serif;
+  align-items: center;
   color: #707070;
-  background-color: #FFFFFF;
-  padding: 20px;
-  visibility: hidden;
+        p{
+          padding: 10px;  
+        }
+        .arrow_dropdown{
+          display: flex;
+          padding-right: 10px;   
+        } 
 }
-
-.dropdown_visible li:hover {
-  background-color: #08A6E4;
-  cursor: pointer;
-
-}
+  .transform_class{
+    transform: rotate(180deg);
+    padding-left: 10px;
+  }
 
 .dropdown_hidden{
-  visibility: hidden;
-}
+  display: none;
+  border: 1px solid #EB476E;
+  border-radius: 6px;
+  list-style: none;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1;
+      li{
+        padding: 3px;
+        color: #000000;
+        &:hover{
+          background-color: #95989A;
+          cursor: pointer;
+        }
 
+      }
+  }
 
 .list_style{
   font-size: 13px;
-
 }
-
 
 /* ---------kalkulator prawa strona---------- */
 
@@ -784,8 +761,6 @@
   width: 100%;
   list-style: none;
   font-family: 'Raleway', sans-serif;
-
-
 }
 .right_section_calculator li{
   width: 100%;
@@ -806,23 +781,24 @@
 
 }
 .total_btn{
+  width: 60%;
   margin-top: 5%;
   text-decoration: none;
   background-color: #08A6E4;
   border-radius: 6px;
-  width: 50%;
   height: 40px;
   padding: 0px 80px 0px 80px;
   color: #FFFFFF;
   align-self: flex-end;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   visibility: visible;
+  
 
 }
 #sum_order {
-  margin-left: 10px;
+  margin-left: 30px;
   font-weight: bold;
   font-size: 18px;
 

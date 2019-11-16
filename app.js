@@ -1,25 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
             
-      // const dropdown_btn = document.querySelector('.mydropdown');
-      // const menu_off = document.querySelector('.dropdown_hidden');
-      // const arrowDown = document.querySelector('.fa-arrow-circle-up');
-      // const arrowUp = document.querySelector('.fa-arrow-circle-down')
-      // const menu_on = document.querySelector('.dropdown_visible')
-      
-      // dropdown_btn.addEventListener('click', function (e) {
-      //       e.preventDefault();
-      //       menu_on.classList.toggle("dropdown_hidden")
-      // });
-  
-      
-      // console.log(dropdown_btn)
-      
-      
-      let input_1 =document.querySelector('input')
+            const dropdown_btn = document.querySelector('.mydropdown');
+            const menu_off = document.querySelector('.dropdown_hidden');
+            const values = menu_off.children
+            const input_text = dropdown_btn.firstChild
+            let dropdown_value = "";      
+                        
+            let input_1 =document.querySelector('input')
             let input_2 =input_1.nextElementSibling
             let input_3 =document.querySelector('.dropdown-menu');
-            // let all_li = input_3.getElementsByTagName('li');
-
             // Pojedyncze row 
             let first_row= document.querySelector('.first_row')
             let second_row= document.querySelector('.second_row')
@@ -37,11 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let prize_accounting= document.querySelector('.prize_accounting')
             let prize_terminal= document.querySelector('.prize_terminal')
 
-            // -----------ELEMENTY Z ROZWIJANEJ LISTY------
-            // wszyskie wartości 0-2
-            let options_types= document.querySelectorAll('.type_of_package');
-            let value_select = document.querySelector('.choose_package');
-
+            
             // -----Check box-------
             let box_1 = document.querySelector('.box_1');
             let box_2 = document.querySelector('.box_2');
@@ -70,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             });
 
-
             input_2.addEventListener('change',function(e){
                   const value = 0.25;
                   const inputValue = this.value;
@@ -83,33 +67,43 @@ document.addEventListener('DOMContentLoaded', function () {
                   total_sum.innerText = "$" + all_total_sum;
                   
             });
+            
+            const arrow_up = document.querySelector('.arrow_dropdown')
+            dropdown_btn.addEventListener('click', function (e) {
+                  menu_off.style.display = "block"
+                  arrow_up.classList.add("transform_class")
+                  for(let i = 0; i<values.length; i++){
+                        let dropdown_value = 0;
 
-             for(i=0; i < options_types.length; i++){
-            value_select.addEventListener('change',function(e){
-                  const prices= [0 , 25 , 60];
-            let input_Value = this[i].value
+                      values[i].addEventListener("click", function(e){
+                              value = values[i]
+                              input_text.innerText = value.innerText
+                              menu_off.style.display = "none"
+                              arrow_up.classList.remove("transform_class")
+                              dropdown_value = input_text.innerText
+
+                              const prices= [0 , 25 , 60];
+                        if (dropdown_value == "Basic"){
+                              package_type.innerText = "Basic"
+                              package_prize.innerText= "$"+prices[0]
+                              total_sum_3 =prices[0]
                   
-                  if (value_select.value == '1'){
-                        package_type.innerText = "Basic"
-                        package_prize.innerText= "$"+prices[0]
-                        total_sum_3 =prices[0]
-
-                  } else if (value_select.value == '2'){
-                        package_type.innerText = "Professional" 
-                        package_prize.innerText = "$" + prices[1]
-                        total_sum_3 = prices[1]
-
-                  } else if (value_select.value == "3"){
-                        package_type.innerText = "Premium"
-                        package_prize.innerText = "$" + prices[2];
-                        total_sum_3 = prices[2]
-                  }
-                  list_row.style.visibility = 'visible';
-                  all_total_sum = total_sum_1 + total_sum_2 + total_sum_3 + total_sum_4 + total_sum_5
-                  total_sum.innerText = "$" + all_total_sum;
-                  });   
-            };
-
+                              } else if (input_text.innerText== "Professional" ){
+                                    package_type.innerText = "Professional" 
+                                    package_prize.innerText = "$" + prices[1]
+                                    total_sum_3 = prices[1]
+                  
+                              } else if (input_text.innerText == "Premium"){
+                                    package_type.innerText = "Premium"
+                                    package_prize.innerText = "$" + prices[2];
+                                    total_sum_3 = prices[2]
+                              }
+                              list_row.style.visibility = 'visible';
+                              all_total_sum = total_sum_1 + total_sum_2 + total_sum_3 + total_sum_4 + total_sum_5
+                              total_sum.innerText = "$" + all_total_sum;
+                        })         
+                  }        
+            });
 
             const box_1_value = 35;
             const box_none = 0;
