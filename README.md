@@ -1,2 +1,2 @@
 # Projekt-1-
-Strona typu onepage, zbudowana w HTML, CSS/SASS, JavaScript
+Responsywna strona typu onepage, zbudowana w HTML, CSS/SASS, JavaScript
