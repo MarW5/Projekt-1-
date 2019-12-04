@@ -1,2 +1,3 @@
 # Projekt-1-
-Responsywna strona typu onepage, zbudowana w HTML, CSS/SASS, JavaScript
+Responsive OnePage Web max-width:1000px, building in HTML, CSS/SASS, JavaScript
+
