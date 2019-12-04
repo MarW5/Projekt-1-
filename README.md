@@ -1,2 +1,2 @@
 # Projekt-1-
-Strona typu onepage, znudowana w HTML, CSS/SASS, JavaScript
+Strona typu onepage, zbudowana w HTML, CSS/SASS, JavaScript
