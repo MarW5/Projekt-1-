@@ -12,6 +12,6 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^1.12.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
