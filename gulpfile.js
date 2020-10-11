@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+const { watch } = require('gulp');
 
 gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
@@ -9,9 +10,3 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'))
 });
-
-
-gulp.task('watch', function(){
-    gulp.watch('scss/**/*.scss', ['sass']);
-});
-
