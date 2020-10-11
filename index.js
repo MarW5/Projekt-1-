@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                   
                   if(window.matchMedia("(max-width: 1000px)").matches){
                         $(".fa-times").css("display","none")
-                        // $(".menu").css("visibility","hidden")
                   }
       })
      
